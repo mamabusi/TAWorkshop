@@ -1,4 +1,14 @@
-# TransformationAdvisor
+# IBM Transformation Advisor Local (Beta)
+
+The IBM Transformation Advisor Local (Beta) is a tool that quickly evaluates your on-premises applications for rapid deployment on WebSphere Application Server and Liberty on public or private cloud environments.
+
+Transformation Advisor supports legacy applications running on the following platforms:
+
+WebSphere Application Server
+JBoss AS
+Oracle Web Logic
+Apache Tomcat
+Plain Old Java Objects running in a JVM
 
 Before you can install IBM Cloud™ Transformation Advisor Local (Beta), go to the Registration and download site to download the files and accept license terms. 
 https://www.ibm.com/account/reg/in-en/signup?formid=urx-38642
