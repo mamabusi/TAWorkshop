@@ -3,22 +3,22 @@
 The IBM Transformation Advisor Local (Beta) is a tool that quickly evaluates your on-premises applications for rapid deployment on WebSphere Application Server and Liberty on public or private cloud environments.
 
 Transformation Advisor supports legacy applications running on the following platforms:
-
-WebSphere Application Server
-JBoss AS
-Oracle Web Logic
-Apache Tomcat
-Plain Old Java Objects running in a JVM
+- WebSphere Application Server
+- JBoss AS
+- Oracle Web Logic
+- Apache Tomcat
+- Plain Old Java Objects running in a JVM
 
 Before you can install IBM Cloud™ Transformation Advisor Local (Beta), go to the Registration and download site to download the files and accept license terms. 
 https://www.ibm.com/account/reg/in-en/signup?formid=urx-38642
 
 Then, make sure that you meet the prerequisites for your operating system and follow the installation instructions.
 
-Installation on Linux/MacOS
+## Installation on Linux/MacOS
 This task covers how to install IBM Transformation Advisor locally on Linux or MacOS. Before you start, ensure that the following products are installed:
 
--> Docker: <To be filled>
+-> Docker: https://docs.docker.com/docker-for-mac/install/ 
+https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community-1
   
 -> Docker Compose: https://docs.docker.com/compose/install/
 
@@ -38,11 +38,15 @@ unzip transformationAdvisor.zip
 Linux: http://< host name >:< port >
 MacOS: http://< IP Address >:< port > 
 
-Windows:
+## Windows:
 
-Watch this video to install on windows
+Watch this video to install on windows:
+https://youtu.be/45xiAUDhiMk
 
-1) Download Docker Desktop for Windows: Sign in to docker: 
+1) Download Docker Desktop for Windows: 
+https://docs.docker.com/docker-for-windows/install/
+
+Sign in to docker: 
 https://hub.docker.com/editions/community/docker-ce-desktop-windows 
 
 2) Create a folder, say "ta_local". Download the Docker Desktop for Windows executable to this folder.
@@ -51,13 +55,6 @@ https://hub.docker.com/editions/community/docker-ce-desktop-windows
 
 ## Exploring Transformation Advisor
 
-Transformation Advisor supports legacy applications running on the following platforms:
-
-- WebSphere Application Server
-- JBoss AS
-- Oracle Web Logic
-- Apache Tomcat
-- Plain Old Java Objects running in a JVM
 
 In this short lab you'll run Transformation Advisor against the data collected from an instance of WebSphere Application Server V8.5.5 and examine the recommendations provided for a different Java EE applications. You'll  then look at the artifacts generated for one  those apps (the later version of the WebSphere sample app Plants By WebSphere)  for deployment on a Liberty container running in Kubernetes using the migration bundle  generated for this app by Transformation Advisor.
 
