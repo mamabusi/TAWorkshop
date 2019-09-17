@@ -94,7 +94,7 @@ Transformation Advisor organizes your legacy server scans into workspaces and co
 
 1. Download the server scan by right clicking on [this link](https://github.com//IBMAppModernization/app-modernization-ta-explore-lab/raw/master/ta/AppSrv01.zip) and selecting **Save Link As** from the context menu to save the file locally.
 
-2. Login in to Transformation Advisor using the URL and credentials provided to you by your instructor
+2. Go to the homepage of the Transformation Advisor. (The URL obtained from the Installation steps).
 
 3. Click on **Add a new workspace**
 
