@@ -52,7 +52,36 @@ https://hub.docker.com/editions/community/docker-ce-desktop-windows
 
 2) Create a folder, say "ta_local". Download the Docker Desktop for Windows executable to this folder.
 
-3) Double click on the Installable and follow the instructions to complete the installation.
+3) Enable shared drives so that Transformation Advisor can mount volumes:
+a. Open the Docker Desktop for Windows menu by right-clicking the Docker icon in the Notifications area.
+b. Select Settings.
+c. Click Shared Drives.
+d. Check the box for the C drive.
+e. To apply shared drives, enter your Windows system (domain) user name and password.
+If your username and password are not accepted, refer to the [Docker Troubleshooting documentation](https://docs.docker.com/docker-for-windows/troubleshoot/#verify-domain-user-has-permissions-for-shared-drives-volumes) for permissions issues with shared drives.
+
+4) Create a ta_local directory, for example C:\Users\ta_local\dockerCompose, and put the .env and Docker-compose.yml files there.
+
+5) Open a terminal session.Change to the directory where the Docker-compose.yml and .env files are located.
+
+6) Make sure that Docker is running: docker ps
+
+7) Pull the Transformation Advisor images: docker-compose pull
+
+8) Start the containers and run them in the background:
+   docker-compose up -d
+   
+9) Verify that three containers are created:
+docker ps
+You see something similar to the following output:
+ibmcom/transformation-advisor-ui:latest  
+ibmcom/transformation-advisor-server:latest  
+ibmcom/transformation-advisor-db:latest
+
+10) Access the Transformation Advisor UI at the following URL:
+http://< host >:2221
+
+
 
 ## Exploring Transformation Advisor
 
